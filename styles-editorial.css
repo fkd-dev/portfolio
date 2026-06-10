@@ -179,7 +179,7 @@ a { color: inherit; }
 /* contact */
 .ed-contact { border-top: 2px solid var(--ink); padding: 80px 0 50px; margin-top: 30px; scroll-margin-top: 40px; }
 .fab-contact {
-  position: fixed; left: 24px; bottom: 24px; z-index: 50;
+  position: fixed; left: calc(max(48px, (100vw - var(--maxw)) / 2 + 48px)); bottom: 24px; z-index: 50;
   display: inline-flex; align-items: center; gap: 9px;
   padding: 13px 20px 13px 17px; border-radius: 999px;
   background: var(--accent); color: #fff; text-decoration: none;
