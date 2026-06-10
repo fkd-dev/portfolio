@@ -129,7 +129,7 @@ const PROJECTS = [
     role: "アプリリードエンジニア / Flutter",
     body: "招待型SNSサービスを設計・アーキテクチャ導入から牽引。Claude Code を使った仕様書駆動開発を併用し、Liquidによる本人認証、Stripe決済、Firestoreによるリアルタイムチャットを実装しました。",
     meta: [["役割", "Tech Lead"], ["フェーズ", "0→1"], ["技術", "Flutter / Firebase"]],
-    img: "screens/proj-sns.png",
+    img: "screens/proj-sns.webp",
     shot: "招待制SNS",
   },
   {
@@ -137,7 +137,7 @@ const PROJECTS = [
     role: "アプリリードエンジニア / Native→Flutter リプレース",
     body: "美容系DXスタートアップのCtoCサービスアプリを、Nativeからクロスプラットフォーム（Flutter）へフルリプレース。設計・アーキテクチャ刷新を主導し、既存資産を活かしながらiOS / Androidを単一コードベースに統合しました。",
     meta: [["役割", "Tech Lead"], ["案件", "フルリプレース"], ["技術", "Native → Flutter"]],
-    img: "screens/proj-beauty.png",
+    img: "screens/proj-beauty.webp",
     shot: "美容DX / CtoC",
   },
   {
@@ -145,7 +145,7 @@ const PROJECTS = [
     role: "アプリリードエンジニア / Flutter",
     body: "顧客向けと店舗スタッフ向けの2アプリを開発。商品選択から決済、店舗受取までをシームレスに体験できる設計。CI/CDを構築し、gRPC連携やWidgetBook導入でUIコンポーネントを整備しました。",
     meta: [["役割", "Tech Lead"], ["規模", "全体10名+"], ["基盤", "CI/CD・gRPC"]],
-    img: "screens/proj-retail.png",
+    img: "screens/proj-retail.webp",
     shot: "toC / 店舗アプリ",
   },
   {
@@ -153,7 +153,7 @@ const PROJECTS = [
     role: "リード / 設計・認証基盤 ・ 約2年参画",
     body: "10億円超を調達したスタートアップの医療系アプリを、2週間スプリントのスクラムで約2年にわたり開発。MVVM+Repositoryでの設計を主導し、Webトークン認証やトークンリフレッシュ機構、WebView連携を実装しました。",
     meta: [["役割", "Lead / Architect"], ["規模", "全体30名+"], ["期間", "約2年"]],
-    img: "screens/proj-medical.png",
+    img: "screens/proj-medical.webp",
     shot: "医療 / 診療アプリ",
   },
   {
@@ -161,7 +161,7 @@ const PROJECTS = [
     role: "企画 / 設計 / 開発 / 運用（個人）",
     body: "企画・UI/UX設計・実装・リリース・運用までを一人で担当。家計簿アプリは累計250万ダウンロードを突破。広告・フリーミアム・アプリ内課金でのマネタイズや商標登録まで自ら手がけました。",
     meta: [["役割", "フルレンジ"], ["最高記録", "250万DL+"], ["範囲", "企画〜運用〜収益化"]],
-    img: "screens/proj-finance.png",
+    img: "screens/proj-finance.webp",
     shot: "家計簿 / 250万DL+",
   },
 ];

@@ -224,6 +224,14 @@ function App() {
         </div>
       </div>
 
+      <a className="fab-contact" href="#contact" aria-label="お問い合わせセクションへ移動">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M4 5h16v12H7l-3 3z" />
+          <path d="M8 10h8M8 13h5" />
+        </svg>
+        <span>お問い合わせ</span>
+      </a>
+
       <TweaksPanel>
         <TweakSection label="テーマ" />
         <TweakColor label="アクセント" value={t.accent}
