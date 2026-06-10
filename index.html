@@ -4,6 +4,48 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Portfolio — 案C Editorial</title>
+
+<!-- ===================================================================
+     Google Analytics 4（GA4）
+     ↓ "G-01CCJ55N3M" を、ご自身の測定IDに差し替えてください。
+     取得方法: analytics.google.com → 管理 → データストリーム → ウェブ
+     （滞在時間・地域・デバイス・流入元などが自動計測されます）
+     ==================================================================== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-01CCJ55N3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-01CCJ55N3M');
+</script>
+<!-- スクロール到達率 / お問い合わせクリックの追加計測 -->
+<script>
+  (function () {
+    var hits = {};
+    [25, 50, 75, 100].forEach(function (m) { hits[m] = false; });
+    function onScroll() {
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      if (max <= 0) return;
+      var pct = Math.round((h.scrollTop || window.scrollY) / max * 100);
+      [25, 50, 75, 100].forEach(function (m) {
+        if (!hits[m] && pct >= m) {
+          hits[m] = true;
+          if (window.gtag) gtag('event', 'scroll_depth', { percent: m });
+        }
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href.indexOf('docs.google.com/forms') > -1 && window.gtag) {
+        gtag('event', 'contact_form_open', { location: a.className || 'link' });
+      }
+    });
+  })();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
