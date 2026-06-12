@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fkd-dev.github.io/portfolio/sitemap.xml
