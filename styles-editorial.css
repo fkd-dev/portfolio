@@ -92,6 +92,14 @@ a { color: inherit; }
 .ed-sec h2 { font-family: var(--font-body); font-weight: 600; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.05; letter-spacing: -0.025em; margin: 0; text-wrap: balance; }
 .ed-sec .lead { font-size: 17px; color: var(--ink-2); max-width: 600px; margin: 18px 0 0; }
 
+/* availability — key / value rows */
+.ed-avail { border-top: 1px solid var(--line); margin: 0; }
+.ed-avail .row { display: grid; grid-template-columns: 150px 1fr; gap: 28px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.ed-avail dt { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.04em; color: var(--muted); margin: 0; }
+.ed-avail dd { font-size: 17px; color: var(--ink); margin: 0; font-weight: 500; letter-spacing: -0.01em; }
+.ed-avail .open { display: inline-block; width: 7px; height: 7px; border-radius: 999px; background: var(--accent); margin-right: 9px; vertical-align: middle; }
+@media (max-width: 560px) { .ed-avail .row { grid-template-columns: 1fr; gap: 6px; } }
+
 /* strengths — editorial numbered rows */
 .ed-str { display: flex; flex-direction: column; }
 .ed-str .row { display: grid; grid-template-columns: 52px 1fr; gap: 24px; padding: 34px 0; border-top: 1px solid var(--line); }
